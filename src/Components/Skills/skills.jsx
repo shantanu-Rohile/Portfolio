@@ -1,7 +1,7 @@
 import React from 'react'
 import './skills.css'
 import Slider from './3d-slider/Slider'
-import Skills from './Skill-Dropdown/skills'
+import Skills from './Skill-Dropdown/Skills.jsx'
 function skills() {
   return (
     <div className='skills' id='skills'>
