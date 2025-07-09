@@ -1,5 +1,5 @@
 import React from 'react';
-import './project.css';
+import './Project.css';
 import Movie from './assets/Movie-app.png';
 import Simon from './assets/simon-says.png';
 import Todo from './assets/todo.png';
