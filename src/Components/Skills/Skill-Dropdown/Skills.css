@@ -1,0 +1,35 @@
+
+.outer{
+    border: 1px solid  #00fff7;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.outer .dropdown {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.dropdown-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+
+.dropdown-content img{
+    height: 150px;
+    width: 150px;
+    margin: 25px;
+
+}
+
+/* .dropdown-content .Git{
+   background-color: white;
+   border-radius: 105%;
+
+}  */

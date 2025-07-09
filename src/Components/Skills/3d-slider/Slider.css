@@ -1,0 +1,62 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  top: 40px;
+}
+.banner .slider {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  /* MISTAKE 4: Fixed transform calculation - should use rotateY for 3D carousel effect */
+  transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(250px);
+}
+
+.banner .slider .item img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  object-fit: fill;
+}
+
+/* Add these media queries at the end of the file */
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 70vh;
+  }
+
+  .banner .slider {
+    top: 15%;
+  }
+
+  .banner .slider .item {
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(200px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    height: 50vh;
+  }
+
+  .banner .slider {
+    width: 80px;
+    height: 120px;
+    left: calc(50% - 40px);
+  }
+
+  .banner .slider .item {
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(150px);
+  }
+}

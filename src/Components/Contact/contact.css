@@ -1,0 +1,82 @@
+h1.contact-title {
+  background: linear-gradient(90deg, #ff6ec4, #fcb045, #f2fcfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px; /* adds spacing between boxes more cleanly */
+  flex-wrap: wrap; /* allows responsiveness */
+}
+
+.contact img {
+  height: 60px;
+  width: 60px;
+  transition: transform 0.3s ease;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: #f2fcfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effects */
+.box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+/* Add these media queries at the end of the file */
+@media screen and (max-width: 768px) {
+  .contact {
+    gap: 20px;
+  }
+
+  h1.contact-title {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    gap: 15px;
+  }
+
+  .box {
+    height: 80px;
+    width: 80px;
+  }
+
+  .contact img {
+    height: 45px;
+    width: 45px;
+  }
+
+  h1.contact-title {
+    font-size: 1.8rem;
+    margin-top: 25px;
+  }
+}

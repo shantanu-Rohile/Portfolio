@@ -1,0 +1,49 @@
+h1.gradient-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 50px;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #ff6ec4, #fcb045, #f2fcfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2.gradient-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #ff6ec4, #fcb045, #f2fcfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add these media queries at the end of the file */
+@media screen and (max-width: 768px) {
+  h1.gradient-text {
+    font-size: 60px;
+    margin-top: 30px;
+  }
+
+  h2.gradient-text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1.gradient-text {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  h2.gradient-text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,48 @@
+.navbar-portfolio {
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 20px;
+
+}
+
+.navbar{
+  justify-content: center !important; 
+  padding: 20px;
+  background-color: black;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.navbar-portfolio a {
+  color: azure;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar-portfolio a:hover {
+  color: #fcb045;
+}
+.navbar-portfolio a.nav-link,
+.navbar-portfolio a.navbar-brand {
+  color: azure !important;
+}
+
+/* Prevent link turning black when clicked or focused */
+.navbar-portfolio a.nav-link:focus,
+.navbar-portfolio a.nav-link:active,
+.navbar-portfolio a.navbar-brand:focus,
+.navbar-portfolio a.navbar-brand:active {
+  color: #fcb045 !important;
+  background-color: transparent !important;
+  outline: none;
+  box-shadow: none;
+}
+.navbar-portfolio a.nav-link:hover {
+  color: #fcb045 !important;
+  text-decoration: none;
+}
