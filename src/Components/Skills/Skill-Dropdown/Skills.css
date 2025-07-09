@@ -15,21 +15,22 @@
     text-align: left;
 }
 
-.dropdown-content{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-   
+.dropdown-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* responsive */
+  gap: 10px;
+  justify-items: center;
 }
 
-.dropdown-content img{
-    height: 150px;
-    width: 150px;
-    margin: 25px;
 
+.dropdown-content img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-/* .dropdown-content .Git{
-   background-color: white;
-   border-radius: 105%;
-
-}  */
+.dropdown-content img:hover {
+  transform: scale(1.1);
+}
